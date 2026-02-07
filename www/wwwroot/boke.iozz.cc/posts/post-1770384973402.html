@@ -1,0 +1,68 @@
+<!doctype html>\n<html lang="zh-CN">\n<head>\n  <meta charset="utf-8">\n  <meta name="viewport" content="width=device-width, initial-scale=1">\n  <title>产品迭代：如何梳理你的日常流程</title>\n  <meta name="description" content="本文围绕“自动化运维”展开，给出可落地的流程与注意事项，帮助系统更稳、更快、更易维护。">\n  <meta name="keywords" content="自动化运维,稳定性,效率,可维护性,最佳实践">\n  <style>\n    body{font-family:-apple-system,BlinkMacSystemFont,"SF Pro Text","SF Pro Display","Helvetica Neue",Arial,sans-serif;margin:0;background:#fff;color:#0b0b0f;}\n    .wrap{max-width:900px;margin:0 auto;padding:64px 24px 96px;}\n    h1{font-size:36px;margin:0 0 8px 0;letter-spacing:-0.02em;}\n    .meta{color:#6b7280;font-size:14px;margin-bottom:24px;}\n    article{line-height:1.85;font-size:17px;}\n    pre{background:#0b0b0f;color:#f9fafb;padding:16px;border-radius:12px;overflow:auto;}\n    code{font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,monospace;}\n    a{color:#111827;text-decoration:none;border-bottom:1px solid #e5e7eb;}\n    a:hover{border-bottom-color:#111827;}\n  </style>\n</head>\n<body>\n  <div class="wrap">\n    <h1>产品迭代：如何梳理你的日常流程</h1>\n    <div class="meta">2026-02-06 13:36:13</div>\n    <article><h1>产品迭代：如何梳理你的日常流程</h1>
+<p><strong>摘要</strong>：本文围绕“自动化运维”展开，给出可落地的流程与注意事项，帮助系统更稳、更快、更易维护。</p>
+<p><strong>关键词</strong>：自动化运维、稳定性、效率、可维护性、最佳实践</p>
+<h2>1. 背景与目标</h2>
+<p>明确目标能降低无效投入：先定义可衡量的指标（如响应时间、发布频率、错误率），再制定边界与优先级。</p>
+<h2>2. 关键策略</h2>
+<p>优先处理高杠杆环节：从自动化、可观测性、可复用组件入手，降低重复劳动。</p>
+<h2>3. 执行清单</h2>
+<p>把方法变成清单：每日/每周/每月固定复盘；所有改动先评估影响，再分阶段发布。</p>
+<h2>4. 常见误区</h2>
+<p>只追求速度忽视稳定性、只做工具不做流程、指标设定过多导致执行疲劳。</p>
+<h2>5. 结论</h2>
+<p>把复杂问题拆成小步骤，持续迭代，系统就会长期保持在可控状态。</p>
+<blockquote>
+<p>小结：持续优化比一次性重构更可靠。
+\n\n### 补充建议\n- 记录基线数据\n- 逐步灰度发布\n- 预留回滚方案\n</p>
+</blockquote>
+</article>\n  </div>\n
+<style>
+  .toc-toggle{position:fixed;right:18px;bottom:18px;z-index:9999;border:1px solid #e5e7eb;background:#fff;color:#111827;padding:10px 12px;border-radius:10px;font-size:14px;box-shadow:0 8px 24px rgba(0,0,0,.08);cursor:pointer} @media (max-width: 900px){.toc-toggle{top:16px;bottom:auto;}}
+  .toc{position:fixed;top:120px;right:24px;width:260px;max-height:65vh;overflow:auto;border:1px solid #e5e7eb;background:#fff;border-radius:16px;padding:14px;box-shadow:0 12px 30px rgba(0,0,0,.08);z-index:9998}
+  .toc h3{margin:0 0 10px;font-size:14px;color:#6b7280}
+  .toc a{display:block;padding:6px 8px;border-radius:8px;color:#111827;text-decoration:none;font-size:13px}
+  .toc a:hover{background:#f3f4f6}
+  .toc a.indent{padding-left:18px;color:#374151}
+  .toc.hidden{display:none}
+  @media (max-width: 900px){
+    .toc{display:none;}
+    .toc-toggle{display:flex;align-items:center;gap:6px;}
+    .toc.mobile{display:block;top:auto;bottom:72px;right:18px;width:70vw;max-width:320px}
+  }
+  @media (prefers-color-scheme: dark){
+    .toc, .toc-toggle{background:#0f1115;border-color:#1f2937;color:#f9fafb}
+    .toc a{color:#f9fafb}
+    .toc a:hover{background:#111827}
+  }
+</style>
+<div class=toc id=toc><h3>目录</h3><div id=tocList></div></div>
+<div class=toc-toggle id=tocToggle>☰ 目录</div>
+<script>
+(function(){
+  const headings = Array.from(document.querySelectorAll('article h2, article h3'));
+  if(!headings.length) return;
+  const toc = document.getElementById('toc');
+  const list = document.getElementById('tocList');
+  headings.forEach((h, i)=>{
+    if(!h.id) h.id = 'h-'+i;
+    const a = document.createElement('a');
+    a.textContent = h.textContent.trim();
+    if(h.tagName.toLowerCase()==='h3') a.classList.add('indent');
+    a.href = '#'+h.id;
+    a.addEventListener('click', (e)=>{
+      e.preventDefault();
+      document.querySelector(a.getAttribute('href')).scrollIntoView({behavior:'smooth', block:'start'});
+      if(window.innerWidth<=900){ toc.classList.add('hidden'); }
+    });
+    list.appendChild(a);
+  });
+  const toggle = document.getElementById('tocToggle');
+  toggle.addEventListener('click', ()=>{
+    if(window.innerWidth>900) return;
+    toc.classList.toggle('hidden');
+    toc.classList.toggle('mobile');
+  });
+})();
+</script>
+
+</body>\n</html>

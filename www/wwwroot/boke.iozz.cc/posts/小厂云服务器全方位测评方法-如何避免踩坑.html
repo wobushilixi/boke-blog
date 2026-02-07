@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>小厂云服务器全方位测评方法：如何避免踩坑</title>
+  <meta name="description" content="总结小厂云测评的核心方法论，从性能、网络、稳定性、面板与售后五个维度给出可操作的评估流程。">
+  <meta name="keywords" content="小厂云测评,云服务器选型,VPS测评,方法论,避坑">
+  <style>
+    body{font-family:-apple-system,BlinkMacSystemFont,"SF Pro Text","SF Pro Display","Helvetica Neue",Arial,sans-serif;margin:0;background:#fff;color:#0b0b0f;}
+    .wrap{max-width:900px;margin:0 auto;padding:64px 24px 96px;}
+    h1{font-size:36px;margin:0 0 8px 0;letter-spacing:-0.02em;}
+    .meta{color:#6b7280;font-size:14px;margin-bottom:24px;}
+    article{line-height:1.85;font-size:17px;}
+    pre{background:#0b0b0f;color:#f9fafb;padding:16px;border-radius:12px;overflow:auto;}
+    code{font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,monospace;}
+    a{color:#111827;text-decoration:none;border-bottom:1px solid #e5e7eb;}
+    a:hover{border-bottom-color:#111827;}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <h1>小厂云服务器全方位测评方法：如何避免踩坑</h1>
+    <div class="meta">2026-02-07 16:57:21</div>
+    <article>
+      <p><strong>摘要</strong>：总结小厂云测评的核心方法论，从性能、网络、稳定性、面板与售后五个维度给出可操作的评估流程。</p>
+      <p><strong>关键词</strong>：小厂云测评、云服务器选型、VPS测评、方法论、避坑</p>
+      <h2>为什么小厂云更需要测评</h2>
+<p>小厂云价格低但不一定稳定。测评目的不是找最强，而是找到与你需求匹配的可用节点。</p>
+<h2>性能测评要点</h2>
+<p>单核性能、内存余量、IO 能力是核心指标。仅看参数容易误判。</p>
+<h2>网络测评要点</h2>
+<p>关注延迟、丢包、抖动，尤其是晚高峰。稳定性比带宽更重要。</p>
+<h2>稳定性测评</h2>
+<p>至少观察 7 天，记录宕机、重启、掉线情况，有条件做多节点对比。</p>
+<h2>面板与售后体验</h2>
+<p>是否支持快照与回滚、是否有客服响应、文档是否清晰，是决定可用性的关键。</p>
+<h2>最终选型建议</h2>
+<p>轻量站点优先稳定线路；代理中转优先低丢包；数据库业务不要用超低配。</p>
+<h2>结论</h2>
+<p>小厂云不是不能用，缺少方法才会踩坑。测评到位、场景匹配才是最优解。</p>
+    </article>
+  </div>
+
+<style>
+  .toc-toggle{position:fixed;right:18px;bottom:18px;z-index:9999;border:1px solid #e5e7eb;background:#fff;color:#111827;padding:10px 12px;border-radius:10px;font-size:14px;box-shadow:0 8px 24px rgba(0,0,0,.08);cursor:pointer} @media (max-width: 900px){.toc-toggle{top:16px;bottom:auto;}}
+  .toc{position:fixed;top:120px;right:24px;width:260px;max-height:65vh;overflow:auto;border:1px solid #e5e7eb;background:#fff;border-radius:16px;padding:14px;box-shadow:0 12px 30px rgba(0,0,0,.08);z-index:9998}
+  .toc h3{margin:0 0 10px;font-size:14px;color:#6b7280}
+  .toc a{display:block;padding:6px 8px;border-radius:8px;color:#111827;text-decoration:none;font-size:13px}
+  .toc a:hover{background:#f3f4f6}
+  .toc a.indent{padding-left:18px;color:#374151}
+  .toc.hidden{display:none}
+  @media (max-width: 900px){
+    .toc{display:none;}
+    .toc-toggle{display:flex;align-items:center;gap:6px;}
+    .toc.mobile{display:block;top:auto;bottom:72px;right:18px;width:70vw;max-width:320px}
+  }
+  @media (prefers-color-scheme: dark){
+    .toc, .toc-toggle{background:#0f1115;border-color:#1f2937;color:#f9fafb}
+    .toc a{color:#f9fafb}
+    .toc a:hover{background:#111827}
+  }
+</style>
+<div class=toc id=toc><h3>目录</h3><div id=tocList></div></div>
+<div class=toc-toggle id=tocToggle>☰ 目录</div>
+<script>
+(function(){
+  const headings = Array.from(document.querySelectorAll('article h2, article h3'));
+  if(!headings.length) return;
+  const toc = document.getElementById('toc');
+  const list = document.getElementById('tocList');
+  headings.forEach((h, i)=>{
+    if(!h.id) h.id = 'h-'+i;
+    const a = document.createElement('a');
+    a.textContent = h.textContent.trim();
+    if(h.tagName.toLowerCase()==='h3') a.classList.add('indent');
+    a.href = '#'+h.id;
+    a.addEventListener('click', (e)=>{
+      e.preventDefault();
+      document.querySelector(a.getAttribute('href')).scrollIntoView({behavior:'smooth', block:'start'});
+      if(window.innerWidth<=900){ toc.classList.add('hidden'); }
+    });
+    list.appendChild(a);
+  });
+  const toggle = document.getElementById('tocToggle');
+  toggle.addEventListener('click', ()=>{
+    if(window.innerWidth>900) return;
+    toc.classList.toggle('hidden');
+    toc.classList.toggle('mobile');
+  });
+})();
+</script>
+
+</body>
+</html>

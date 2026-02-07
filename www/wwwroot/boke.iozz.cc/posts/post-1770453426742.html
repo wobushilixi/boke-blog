@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang=zh-CN>
+<head>
+  <meta charset=utf-8>
+  <meta name=viewport content=width=device-width, initial-scale=1>
+  <title>第三章：从零搭建可持续的个人系统</title>
+  <meta name=description content=分享搭建个人系统的思路：目标拆解、信息结构、自动化与持续复盘，帮助建立稳定、可迭代的效率体系。>
+  <meta name=keywords content=个人系统,效率,复盘,自动化,方法论>
+  <style>
+    body{font-family:-apple-system,BlinkMacSystemFont,SF Pro Text,SF Pro Display,Helvetica Neue,Arial,sans-serif;margin:0;background:#fff;color:#0b0b0f;}
+    .wrap{max-width:900px;margin:0 auto;padding:64px 24px 96px;}
+    h1{font-size:36px;margin:0 0 8px 0;letter-spacing:-0.02em;}
+    .meta{color:#6b7280;font-size:14px;margin-bottom:24px;}
+    article{line-height:1.85;font-size:17px;}
+    pre{background:#0b0b0f;color:#f9fafb;padding:16px;border-radius:12px;overflow:auto;}
+    code{font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,monospace;}
+    a{color:#111827;text-decoration:none;border-bottom:1px solid #e5e7eb;}
+    a:hover{border-bottom-color:#111827;}
+  </style>
+</head>
+<body>
+  <div class=wrap>
+    <h1>第三章：从零搭建可持续的个人系统</h1>
+    <div class=meta>2026-02-07 16:38:00</div>
+    <article>
+      <p><strong>摘要</strong>：分享搭建个人系统的思路：目标拆解、信息结构、自动化与持续复盘，帮助建立稳定、可迭代的效率体系。</p>
+      <p><strong>关键词</strong>：个人系统、效率、复盘、自动化、方法论</p>
+      <h2>1. 为什么要有“个人系统”</h2>
+      <p>许多人把效率理解为更快地完成任务，但真正有效的效率，是让生活和工作长期稳定。个人系统的核心不是工具，而是结构：把目标、资源、任务、复盘放在同一套逻辑里，让你不依赖短期热情也能持续推进。</p>
+      <h2>2. 目标拆解：从愿望到可执行</h2>
+      <p>先把“大目标”拆成可衡量的阶段，再拆成周度动作。比如“做一个长期博客”，第一阶段是确定栏目与内容结构，第二阶段是建立发布流程，第三阶段是稳定产出。每个阶段都配一个最小可交付（MVP），让自己快速获得反馈。</p>
+      <h2>3. 信息结构：减少噪音，提高命中率</h2>
+      <p>个人系统最容易失败在“堆积信息”。解决方式是建立清晰的层级：</p>
+      <ul>
+        <li><strong>输入层</strong>：灵感、链接、想法只做轻量记录</li>
+        <li><strong>整理层</strong>：定期清理、归类、标注优先级</li>
+        <li><strong>输出层</strong>：只保留对当前目标有价值的内容</li>
+      </ul>
+      <p>当你能把“输入”变成“输出”，系统才会闭环。</p>
+      <h2>4. 自动化与节律：让系统自我运行</h2>
+      <p>系统能持续的关键是节律：固定时间复盘、固定周期输出。可以使用自动化来降低摩擦，比如定时提醒、模板化的发布流程、统一的标签规范。这不是为了“省时间”，而是为了避免拖延和决策疲劳。</p>
+      <h2>5. 复盘机制：持续小幅修正</h2>
+      <p>每周至少一次复盘：回顾完成了什么、阻碍是什么、下周只做三件最重要的事。不要追求一次性完美，持续的小修正，才是系统稳定的原因。</p>
+      <h2>6. 结语：系统不是束缚，而是自由</h2>
+      <p>真正的个人系统不是把你锁死，而是减少噪音，让你有更多注意力做有价值的事。保持结构清晰、节奏稳定、反馈及时，你的系统会越来越“自我运转”。</p>
+      <blockquote><p>小结：有了结构和节律，效率自然提升，长期坚持才会有复利。</p></blockquote>
+    </article>
+  </div>
+
+<style>
+  .toc-toggle{position:fixed;right:18px;bottom:18px;z-index:9999;border:1px solid #e5e7eb;background:#fff;color:#111827;padding:10px 12px;border-radius:10px;font-size:14px;box-shadow:0 8px 24px rgba(0,0,0,.08);cursor:pointer} @media (max-width: 900px){.toc-toggle{top:16px;bottom:auto;}}
+  .toc{position:fixed;top:120px;right:24px;width:260px;max-height:65vh;overflow:auto;border:1px solid #e5e7eb;background:#fff;border-radius:16px;padding:14px;box-shadow:0 12px 30px rgba(0,0,0,.08);z-index:9998}
+  .toc h3{margin:0 0 10px;font-size:14px;color:#6b7280}
+  .toc a{display:block;padding:6px 8px;border-radius:8px;color:#111827;text-decoration:none;font-size:13px}
+  .toc a:hover{background:#f3f4f6}
+  .toc a.indent{padding-left:18px;color:#374151}
+  .toc.hidden{display:none}
+  @media (max-width: 900px){
+    .toc{display:none;}
+    .toc-toggle{display:flex;align-items:center;gap:6px;}
+    .toc.mobile{display:block;top:auto;bottom:72px;right:18px;width:70vw;max-width:320px}
+  }
+  @media (prefers-color-scheme: dark){
+    .toc, .toc-toggle{background:#0f1115;border-color:#1f2937;color:#f9fafb}
+    .toc a{color:#f9fafb}
+    .toc a:hover{background:#111827}
+  }
+</style>
+<div class=toc id=toc><h3>目录</h3><div id=tocList></div></div>
+<div class=toc-toggle id=tocToggle>☰ 目录</div>
+<script>
+(function(){
+  const headings = Array.from(document.querySelectorAll('article h2, article h3'));
+  if(!headings.length) return;
+  const toc = document.getElementById('toc');
+  const list = document.getElementById('tocList');
+  headings.forEach((h, i)=>{
+    if(!h.id) h.id = 'h-'+i;
+    const a = document.createElement('a');
+    a.textContent = h.textContent.trim();
+    if(h.tagName.toLowerCase()==='h3') a.classList.add('indent');
+    a.href = '#'+h.id;
+    a.addEventListener('click', (e)=>{
+      e.preventDefault();
+      document.querySelector(a.getAttribute('href')).scrollIntoView({behavior:'smooth', block:'start'});
+      if(window.innerWidth<=900){ toc.classList.add('hidden'); }
+    });
+    list.appendChild(a);
+  });
+  const toggle = document.getElementById('tocToggle');
+  toggle.addEventListener('click', ()=>{
+    if(window.innerWidth>900) return;
+    toc.classList.toggle('hidden');
+    toc.classList.toggle('mobile');
+  });
+})();
+</script>
+
+</body>
+</html>

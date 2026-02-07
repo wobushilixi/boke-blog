@@ -1,0 +1,15 @@
+[Unit]
+Description=Boke Admin
+After=network.target
+
+[Service]
+Type=simple
+WorkingDirectory=/opt/boke-admin
+ExecStart=/usr/bin/node /opt/boke-admin/server.js
+Restart=always
+RestartSec=3
+User=root
+Environment=NODE_ENV=production
+
+[Install]
+WantedBy=multi-user.target
